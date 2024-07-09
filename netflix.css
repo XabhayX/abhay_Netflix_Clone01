@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+video,
+image {
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-1 {
+    position: relative;
+    width: 100%;
+    /* height: 120vh; */
+    overflow: hidden;
+}
+
+.page-1 img {
+    width: 100%;
+    /* height: 200%; */
+    background-size:cover;
+    background-position: center;
+    background-image: url('bg.jpg');
+    /* object-fit: cover; */
+}
+
+.text1 {
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.search1 {
+    height: 50px;
+    width: 350px;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid grey;
+    display: inline-block;
+    background: transparent;
+}
+
+.search1::placeholder {
+    transition: all 0.3s ease;
+}
+
+.search1:focus::placeholder {
+    transform: translateY(-10px);
+    font-size: 10px;
+}
+
+.get_started {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    margin: 0px 7px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, black, transparent, transparent, black, black);
+    opacity: .8;
+    z-index: 1;
+}
+
+.divider1 {
+    position: relative;
+    top: 0px;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+}
+
+.page2,
+.page-3,
+.page4,
+.page-5 , .page6 {
+    /* height: 77vh; */
+    min-height: 450px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    color: white;
+    z-index: -2;
+}
+.page6{
+    z-index: 5;
+}
+.figure1 {
+    position: absolute;
+    right: 75px;
+}
+
+.page2-text,
+.page4-text {
+    position: relative;
+    top: 150px;
+    margin-left: 50px;
+    left: 100px;
+    width: 35%;
+
+    /* background-color: red; */
+}
+
+.page2::after,
+.page4::after {
+    content: "";
+    clear: left;
+    display: table;
+    justify-content: center;
+}
+
+
+.page2 video {
+    position: absolute;
+    top: 96px;
+    z-index: -1;
+    left: 75px;
+}
+
+.page4 video {
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+    left: 75px;
+}
+
+.page2 img,
+.page2 video,
+.page4 img,
+.page4 video {
+    transform: scale(0.75);
+}
+
+.divider2,
+.divider3,
+.divider4 , .divider5, .divider6{
+    background-color: rgb(35, 35, 35);
+    position: relative;
+    top: 0px;
+    height: 8px;
+    width: 100%;
+}
+
+.page-3,
+.page-5 {
+    justify-content: center;
+}
+
+.page3-text,
+.page5-text {
+    position: absolute;
+    top: 15%;
+    margin-left: 50px;
+    right: 180px;
+    width: 35%;
+    /* background-color: red; */
+}
+
+.page3::after,
+.page5::after {
+    content: "";
+    clear: right;
+    display: table;
+    justify-content: center;
+}
+
+.page3img1,
+.page5img1 {
+    transform: scale(.7);
+    position: absolute;
+    top: -10%;
+    z-index: -1;
+}
+
+.page3img2 {
+    transform: scale(.9);
+    margin: 3px;
+}
+
+.page3img1box {
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    min-width: 20%;
+    height: 100px;
+    display: flex;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    position: relative;
+    top: 250px;
+    left: 15.2%;
+}
+
+.page3img1boxtext {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0% 5%;
+    height: 60%;
+    width: 45%;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.roller {
+    position: relative;
+    right: 10%;
+    transform: scale(0.4);
+}
+
+
+
+
+nav {
+    padding: 1% 5%;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    width: 100%;
+
+}
+
+
+.netflix-image {
+    position: relative;
+    top: 15px;
+    left: 100px;
+    transform: scale(1.3);
+    display: inline-block;
+}
+
+.nav-text {
+    position: relative;
+    left: 60%;
+    align-content: center;
+    cursor: default;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: small;
+}
+
+
+
+.select-lang,
+.sign-in {
+    display: inline-block;
+    margin: 0px 7px;
+    padding: 5px 13px 5px 13px;
+    border-radius: 4px;
+}
+
+.select-lang {
+    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+    border: 1px solid grey;
+}
+
+.select-lang:focus {
+    outline: 2px solid white;
+}
+
+.select-lang:focus .lang-robe ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.sign-in {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    display: inline-block;
+    /* position: static; */
+}
+
+.lang-robe ul {
+    display: none;
+    list-style: none;
+}
+
+.lang-robe {
+    position: absolute;
+    color: black;
+}
+
+.lang-robe ul li {
+    padding: 2px 0px;
+}
+
+.lang-robe ul li:hover {
+    background-color: blue;
+    color: white;
+}
+
+.lang-robe ul li:first-child:hover {
+    border-radius: 3px 3px 0px 0px;
+}
+
+.lang-robe ul li:last-child:hover {
+    border-radius: 0px 0px 3px 3px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 200vh; */
+    color: white;
+}
+
+footer h1 {
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    font-size: 43px;
+    line-height: 130%;
+}
+
+ul {
+    list-style: none;
+}
+
+.qhead {
+    height: 12vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+}
+
+.qanswer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0vh;
+    padding: 0px 20px;
+    background-color: rgb(45, 45, 45);
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.appear {
+    height: 30vh;
+}
+
+.disappear {
+    transition: height 1s ease;
+}
