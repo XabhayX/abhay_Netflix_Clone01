@@ -356,7 +356,9 @@ ul {
     align-items: center;
     background-color: rgb(45, 45, 45);
 }
-
+.qhead:hover{
+    background-color:red;
+}
 .qanswer {
     width: 80%;
     margin: auto;
