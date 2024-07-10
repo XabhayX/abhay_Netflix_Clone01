@@ -358,6 +358,7 @@ ul {
 }
 .qhead:hover{
     background-color:red;
+    cursor: pointer;
 }
 .qanswer {
     width: 80%;
