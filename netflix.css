@@ -146,9 +146,10 @@ body {
 
 .page2 video {
     position: absolute;
-    top: 96px;
+    top: 130px;
     z-index: -1;
-    left: 75px;
+    width: 400px;
+    left: 125px;
 }
 
 .page4 video {
@@ -202,8 +203,10 @@ body {
 .page3img1,
 .page5img1 {
     transform: scale(.7);
+    height: 300px;
+
     position: absolute;
-    top: -10%;
+    left: 190px;
     z-index: -1;
 }
 
